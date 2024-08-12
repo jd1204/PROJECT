@@ -1,0 +1,7 @@
+  container:1600px;
+ h1:font-size:62px;
+h2:font-size:48px;
+h3:font-size:26px;
+ p: font-size:20px; 
+a:tex-decoration:none;
+*:font-family:poppins;
