@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sass" />
+    <title>Sass</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- header  -->
+    <header style="background: url(./asset/img/herobanner\ bg\ image.png)">
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="./asset/img/header logo.png" alt="logo" />
+          </div>
+          <div class="bar" onclick="navtoggle()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <ul class="menu-item">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">SOLUTAION</a></li>
+            <li><a href="#">PRINCING</a></li>
+            <li><a href="#">OUR BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-magnifying-glass navbar-icon"></i>
+              </a>
+            </li>
+            <li><a href="#" class="navbar-link-one">SIGN UP</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- herobanner -->
+
+    <section
+      class="herobanner"
+      style="background: url(./asset/img/herobanner\ bg\ image.png)"
+    >
+      <div class="container">
+        <h1>Versatile App For Smart Soft Solutions</h1>
+        <p class="herobanner-contain-one">
+          Sed ut perspiciatis unde omnis natus error voluptatem santium dolor
+          laudantium
+        </p>
+        <div class="herobanner-link-one">
+          <a href="#" class="herobanner-link-one-contain"
+            >Get 14 Days Free Trial</a
+          >
+        </div>
+
+        <div class="herobanner-image">
+          <img src="./asset/img/herobanner-img.png" alt="herobanner-img" />
+        </div>
+      </div>
+      <div class="herobanner-vector">
+        <img src="./asset/img/herobanervector.png" alt="herobanervector" />
+      </div>
+    </section>
+
+    <!-- client section  -->
+
+    <section class="client-section">
+      <div class="container">
+        <div class="client-section-contain-one">
+          Amazing results for amazing clients
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper client-section-mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./asset/img/client-sec-img1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/client-sec-img2.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/client-sec-img3.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/client-sec-img4.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/client-sec-img5.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/client-sec-img6.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/client-sec-img7.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/client-sec-img8.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/client-sec-img1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/client-sec-img2.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/client-sec-img3.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/client-sec-img4.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/client-sec-img5.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/client-sec-img6.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/client-sec-img7.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/client-sec-img8.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow-right">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+      <div class="arrow-left">
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
+    </section> 
+
+    <!-- Our Feature section -->
+
+    <section class="our-feature-section">
+      <div class="container">
+        <div class="our-feature-contain-one">
+          Our Features <span class="our-feature-contain-one-line"></span>
+        </div>
+        <h2 class="our-feature-contain-two">
+          Our Features Presented Smartly and Quickly
+        </h2>
+        <div class="our-feature-section-grid">
+          <div class="our-feature-section-box">
+            <div class="">
+              <img src="./asset/img/our feture-img-1.png" alt="" />
+            </div>
+            <div>
+              <p class="our-feature-contain-three">Fast Performance</p>
+              <div class="our-feature-contain-four">
+                Lorem ipsum dolor sit amet, can tried adipisicing elit and
+                minim.
+              </div>
+            </div>
+          </div>
+          <div class="our-feature-section-box">
+            <div class="">
+              <img src="./asset/img/our feture-img-2.png" alt="" />
+            </div>
+            <div>
+              <p class="our-feature-contain-three">Fast Performance</p>
+              <div class="our-feature-contain-four">
+                Lorem ipsum dolor sit amet, can tried adipisicing elit and
+                minim.
+              </div>
+            </div>
+          </div>
+          <div class="our-feature-section-box">
+            <div class="">
+              <img src="./asset/img/our feture-img-3.png" alt="" />
+            </div>
+            <div>
+              <p class="our-feature-contain-three">Fast Performance</p>
+              <div class="our-feature-contain-four">
+                Lorem ipsum dolor sit amet, can tried adipisicing elit and
+                minim.
+              </div>
+            </div>
+          </div>
+          <div class="our-feature-section-box">
+            <div class="">
+              <img src="./asset/img/our feture-img-1.png" alt="" />
+            </div>
+            <div>
+              <p class="our-feature-contain-three">Fast Performance</p>
+              <div class="our-feature-contain-four">
+                Lorem ipsum dolor sit amet, can tried adipisicing elit and
+                minim.
+              </div>
+            </div>
+          </div>
+          <div class="our-feature-section-box">
+            <div class="">
+              <img src="./asset/img/our feture-img-2.png" alt="" />
+            </div>
+            <div>
+              <p class="our-feature-contain-three">Fast Performance</p>
+              <div class="our-feature-contain-four">
+                Lorem ipsum dolor sit amet, can tried adipisicing elit and
+                minim.
+              </div>
+            </div>
+          </div>
+          <div class="our-feature-section-box">
+            <div class="">
+              <img src="./asset/img/our feture-img-3.png" alt="" />
+            </div>
+            <div>
+              <p class="our-feature-contain-three">Fast Performance</p>
+              <div class="our-feature-contain-four">
+                Lorem ipsum dolor sit amet, can tried adipisicing elit and
+                minim.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <!-- choose us -->
+
+     <section class="choose-us-section">
+      <div class="container">
+        <div class="choose-us-section-row">
+          <div class="choose-us-section-col-one">
+            <img src="./asset/img/choose us.png" alt="" />
+          </div>
+          <div class="choose-us-section-col-two">
+            <div class="choose-us-section-contain-one">
+              Why choose Us?
+              <span class="choose-us-section-contain-one-line"></span>
+            </div>
+            <h2 class="choose-us-section-contain-two">
+              Integrate Automate Workflows
+            </h2>
+            <p class="choose-us-section-contain-three">
+              There are many variations of passages an suffered alteration in
+              some form, of Lorem Ipsum available, majority by injected humour
+              or words which don't look ed ut perspiciatis unde omnis natus
+              error..
+            </p>
+
+            <div class="choose-us-section-icon-contain">
+              <div class="choose-us-section-icon">
+                <img src="./asset/img/choose us icon-1.png" alt="" />
+              </div>
+              <div class="">
+                <h3 class="choose-us-section-contain-four">
+                  Custom Edit Tool Application
+                </h3>
+                <p class="choose-us-section-contain-three">
+                  Duis gravida augue velit eu dignissim felis quis. Integ ante
+                  urna gravida nec, all free text available in the fermentum.
+                </p>
+              </div>
+            </div>
+            <div class="choose-us-section-icon-contain">
+              <div class="choose-us-section-icon">
+                <img src="./asset/img/choose us icon-2.png" alt="" />
+              </div>
+              <div class="">
+                <h3 class="choose-us-section-contain-four">
+                  Built In Safty Chat Mode
+                </h3>
+                <p class="choose-us-section-contain-three">
+                  Duis gravida augue velit eu dignissim felis quis. Integ ante
+                  urna gravida nec, all free text available in the fermentum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+        <!-- review  -->
+ 
+        <div class="review">
+          <div class="choose-us-review-contain">
+            <div class="choose-us-review-contain-img">
+              <img src="./asset/img/choose us icon-3.png" alt="" />
+            </div>
+            <div class="choose-us-review-contain-text">
+              <div class="choose-us-review-contain-text-one">19M+</div>
+              <div class="choose-us-review-contain-text-two">Downloads</div>
+            </div>
+          </div>
+          <div class="choose-us-review-contain">
+            <div class="choose-us-review-contain-img">
+              <img src="./asset/img/choose us icon-4.png" alt="" />
+            </div>
+            <div class="choose-us-review-contain-text">
+              <div class="choose-us-review-contain-text-one">10M+</div>
+              <div class="choose-us-review-contain-text-two">Followers</div>
+            </div>
+          </div>
+          <div class="choose-us-review-contain">
+            <div class="choose-us-review-contain-img">
+              <img src="./asset/img/choose us icon-5.png" alt="" />
+            </div>
+            <div class="choose-us-review-contain-text">
+              <div class="choose-us-review-contain-text-one">110+</div>
+              <div class="choose-us-review-contain-text-two">Countries</div>
+            </div>
+          </div>
+          <div class="choose-us-review-contain">
+            <div class="choose-us-review-contain-img">
+              <img src="./asset/img/choose us icon-6.png" alt="" />
+            </div>
+            <div class="choose-us-review-contain-text">
+              <div class="choose-us-review-contain-text-one">25k</div>
+              <div class="choose-us-review-contain-text-two">
+                 Reviews
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <!-- our team -->
+ <section class="our-team-section">
+      <div class="container">
+        <div class="our-team-section-row">
+          <div class="our-team-section-col-one">
+            <div class="our-team-section-col-one-img-one">
+              <img src="./asset/img/our-team-1.png" alt="" />
+            </div>
+            <div class="our-team-section-col-one-img-two">
+              <img src="./asset/img/our-team-2.png" alt="" />
+            </div>
+            <div class="our-team-section-col-one-img-three">
+              <img src="./asset/img/our-team-3.png" alt="" />
+            </div>
+          </div>
+          <div class="our-team-section-col-two">
+            <p class="our-team-section-contain-one">OUR TEAM</p>
+            <h2 class="our-team-section-contain-two">
+              The foundation of our company
+            </h2>
+            <p class="our-team-section-contain-three">
+              Our exceptional team is the heartbeat of our organization, and the
+              driving force beh`ind our success. As a diverse group of talented
+              individuals, we understand that true innovation stems from
+              collaboration, creativity, and expertise.
+            </p>
+
+
+            <div ><a href="#" class="our-team-link">Meet The Team</a></div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <!-- coustmer-say section -->
+
+  <section class="coustmer-say-section">
+      <div class="container">
+        <div class="swiper coustmer-say-section-mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./asset/img/card.coustmer.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/card.coustmer.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/card.coustmer.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/card.coustmer.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/card.coustmer.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/card.coustmer.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/card.coustmer.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/card.coustmer.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/card.coustmer.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./asset/img/card.coustmer.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <!-- blog section -->
+
+   <section class="blog-section">
+      <div class="container">
+        <div class="blog-section-contain-one">
+          Articles & Tips <span class="blog-section-contain-one-line"></span>
+        </div>
+        <h2 class="blog-section-contain-two">Latest News & Blog</h2>
+        <div class="blog-section-row">
+          <div class="blog-section-col-one">
+            <div class="blog-section-box">
+              <div class="blog-section-box-image">
+                <img src="./asset/img/blog section1.png" alt="" />
+              </div>
+              <div class="blog-section-box-text">
+                <div class="blog-section-contain-three">April 19, 2019</div>
+                <h3 class="blog-section-contain-four">
+                  Basics of branding, how to create brand
+                </h3>
+                <div class="blog-section-box-link-box">
+                  <a href="" class="blog-section-box-link">Read More </a>
+                  <i
+                    class="fa-solid fa-chevron-right blog-section-box-link-icon"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-section-col-two">
+            <div class="blog-section-box">
+              <div class="blog-section-box-image">
+                <img src="./asset/img/blog section2.png" alt="" />
+              </div>
+              <div class="blog-section-box-text">
+                <div class="blog-section-contain-three">April 19, 2019</div>
+                <h3 class="blog-section-contain-four">
+                  What Good SEO Means For Your Webdsite 
+                </h3>
+                <div class="blog-section-box-link-box">
+                  <a href="" class="blog-section-box-link">Read More </a>
+                  <i
+                    class="fa-solid fa-chevron-right blog-section-box-link-icon"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-section-col-three">
+            <div class="blog-section-box">
+              <div class="blog-section-box-image">
+                <img src="./asset/img/blog section3.png" alt="" />
+              </div>
+              <div class="blog-section-box-text">
+                <div class="blog-section-contain-three">April 19, 2019</div>
+                <h3 class="blog-section-contain-four">
+                  A Helpful Guide for About Overcoming Design
+                </h3>
+                <div class="blog-section-box-link-box">
+                  <a href="" class="blog-section-box-link">Read More </a>
+                  <i
+                    class="fa-solid fa-chevron-right blog-section-box-link-icon"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <!-- solutaion section -->
+
+    <section class="solutaion-section">
+      <div class="container">
+        <h2 class="solutaion-section-contain-one">3 solutions métiers</h2>
+        <p class="solutaion-section-contain-two">
+          We uphold strict ethical standards and prioritize the protection of
+          user data through every stage.
+        </p>
+
+        <div class="solutaion-section-row">
+          <div class="solutaion-section-col-one">
+            <div class="solutaion-section-box">
+              <div class="solutaion-section-box-contain-one">DIGITAL</div>
+              <div class="solutaion-section-box-contain-two">
+                Marketing studio
+              </div>
+              <div class="solutaion-section-box-contain-three">
+                We uphold strict ethical standards and prioritize the protection
+              </div>
+              <div class="solutaion-section-box-contain-four">
+                Decouvir la solution
+              </div>
+              <div class="solutaion-section-box-image-one">
+                <img src="./asset/img/solutaion-img.png" alt="solutaion-img" />
+              </div>
+            </div>
+          </div>
+          <div class="solutaion-section-col-two">
+            <div class="solutaion-section-box">
+              <div class="solutaion-section-box-contain-one">RETAIL</div>
+              <div class="solutaion-section-box-contain-two">Retail studio</div>
+              <div class="solutaion-section-box-contain-three">
+                We uphold strict ethical standards and prioritize the protection
+              </div>
+              <div class="solutaion-section-box-contain-four">
+                Decouvir la solution
+              </div>
+              <div class="solutaion-section-box-image-two">
+                <img src="./asset/img/solutaion-img2.png" alt="solutaion-img" />
+              </div>
+            </div>
+          </div>
+          <div class="solutaion-section-col-three">
+            <div class="solutaion-section-box">
+              <div class="solutaion-section-box-contain-one">SUPPLY</div>
+              <div class="solutaion-section-box-contain-two">
+                Revenue studio
+              </div>
+              <div class="solutaion-section-box-contain-three">
+                We uphold strict ethical standards and prioritize the protection
+              </div>
+              <div class="solutaion-section-box-contain-four">
+                Decouvir la solution
+              </div>
+              <div class="solutaion-section-box-image-three">
+                <img src="./asset/img/solutaion-img3.png" alt="solutaion-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <!-- faq section  -->
+
+     <section class="faq-section">
+      <div class="container">
+        <h2 class="faq-section-contain-one">Frequently Asked Questions</h2>
+
+        <div class="faq-section-row">
+          <div class="faq-section-col-one">
+            <div class="faq-section-contain">
+              <div class="faq-section-contain-question">
+                <div class="faq-section-contain-two">
+                  How much does it cost to build a Shopify eCommerce store?
+                </div>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="faq-section-contain-answer">
+                How much does it cost to build a Shopify eCommerce store? How
+                much does it cost to build a Shopify eCommerce store? How much
+                does it cost to build a Shopify eCommerce store?
+              </div>
+            </div>
+            <div class="faq-section-contain">
+              <div class="faq-section-contain-question">
+                <div class="faq-section-contain-two">
+                  Do you provide Shopify Plus Development?
+                </div>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="faq-section-contain-answer">
+                Do you provide Shopify Plus Development? Do you provide Shopify
+                Plus Development?Do you provide Shopify Plus Development?
+              </div>
+            </div>
+            <div class="faq-section-contain">
+              <div class="faq-section-contain-question">
+                <div class="faq-section-contain-two">
+                  I want a custom design for my Shopify store. Can you help with
+                  custom Shopify theme integration?
+                </div>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="faq-section-contain-answer">
+                I want a custom design for my Shopify store. Can you help with
+                custom Shopify theme integration? I want a custom design for my
+                Shopify store. Can you help with custom Shopify theme
+                integration?I want a custom design for my Shopify store. Can you
+                help with custom Shopify theme integration?
+              </div>
+            </div>
+            <div class="faq-section-contain">
+              <div class="faq-section-contain-question">
+                <div class="faq-section-contain-two">
+                  What does your Shopify Development Agency offer that other
+                  service providers don’t?
+                </div>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="faq-section-contain-answer">
+                What does your Shopify Development Agency offer that other
+                service providers don’t?What does your Shopify Development
+                Agency offer that other service providers don’t?What does your
+                Shopify Development Agency offer that other service providers
+                don’t?
+              </div>
+            </div>
+            <div class="faq-section-contain">
+              <div class="faq-section-contain-question">
+                <div class="faq-section-contain-two">
+                  What is the support period provided by your company?
+                </div>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="faq-section-contain-answer">
+                What is the support period provided by your company?What is the
+                support period provided by your company?
+              </div>
+            </div>
+          </div>
+          <div class="faq-section-col-two">
+            <div class="faq-section-contain">
+              <div class="faq-section-contain-question">
+                <div class="faq-section-contain-two">
+                  Will I be able to work with teams in my local hours?
+                </div>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="faq-section-contain-answer">
+                Will I be able to work with teams in my local hours?Will I be
+                able to work with teams in my local hours?Will I be able to work
+                with teams in my local hours?
+              </div>
+            </div>
+            <div class="faq-section-contain">
+              <div class="faq-section-contain-question">
+                <div class="faq-section-contain-two">
+                  Do I get an SEO Friendly Shopify Website?
+                </div>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="faq-section-contain-answer">
+                Do I get an SEO Friendly Shopify Website?Do I get an SEO
+                Friendly Shopify Website?Do I get an SEO Friendly Shopify
+                Website?
+              </div>
+            </div>
+            <div class="faq-section-contain">
+              <div class="faq-section-contain-question">
+                <div class="faq-section-contain-two">
+                  Do you provide NDA Signed Document for my project?
+                </div>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="faq-section-contain-answer">
+                Do you provide NDA Signed Document for my project?Do you provide
+                NDA Signed Document for my project?Do you provide NDA Signed
+                Document for my project?
+              </div>
+            </div>
+            <div class="faq-section-contain">
+              <div class="faq-section-contain-question">
+                <div class="faq-section-contain-two">
+                  What is the payment procedure?
+                </div>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="faq-section-contain-answer">
+                What is the payment procedure?What is the payment procedure?What
+                is the payment procedure?What is the payment procedure?What is
+                the payment procedure?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- work section -->
+
+   <section
+      class="work-section"
+      style="background: url(./asset/img/work\ section.png)"
+    >
+      <div class="container">
+        <div class="work-section-contain-row">
+          <div class="work-section-contain-col">
+            <h2 class="work-section-contain-one">Be a superhero at work</h2>
+            <p class="work-section-contain-two">
+              We are dedicated to answer every question you throw at us. Feel
+              free to ask us anything or share your feedback about our product.
+              We would love to hear from you.
+            </p>
+            <div class="work-section-links">
+              <a href="#" class="work-section-link-one">Sign Up</a>
+            </div>
+          </div>
+          <div class="work-section-contain-two">
+            <img src="./asset/img/worksectionimage.png" alt="work-section" />
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <!-- footer  -->
+<footer style="background: url(./asset/img/work\ section.png)">
+      <div class="footer-items">
+        <div class="container">
+          <div class="footer-row">
+            <div class="footer-col-one">
+              <div class="footer-logo">
+                <img src="./asset/img/header logo.png" alt="logo" />
+              </div>
+              <div class="footer-contain-one">
+                Lorem ipsum dolor sit amet, elit. Aenean ligula eget dolor.
+                Lorem ipsum dolor sit amet, consect to adipisicing elit. Ut enim
+                ad minim veniam. Sed do magna aliqua, quis us elit aboris nisi
+              </div>
+              <div class="footer-icons">
+                <img src="./asset/img/footer icon1.png" alt="footer icon"  class="footer-icon-image"/>
+                <img src="./asset/img/footer icon2.png" alt="footer icon"  class="footer-icon-image"/>
+                <img src="./asset/img/footer icon3.png" alt="footer icon"  class="footer-icon-image"/>
+                <img src="./asset/img/footer icon4.png" alt="footer icon"  class="footer-icon-image"/>
+                <img src="./asset/img/footer icon5.png.png" alt="footer icon"  class="footer-icon-image"/>
+              </div>
+            </div>
+            <div class="footer-col-two">
+              <div class="footer-col-two-links-one">
+                <div class="footer-col-two-links-one-heading">Our Services</div>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-chevron-right"></i
+                    ><a href="#" class="footer-col-two-links-one-contain"
+                      >Cyber Security</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-chevron-right"></i
+                    ><a href="#" class="footer-col-two-links-one-contain"
+                      >IT Management</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-chevron-right"></i
+                    ><a href="#" class="footer-col-two-links-one-contain"
+                      >Entertainment</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-chevron-right"></i
+                    ><a href="#" class="footer-col-two-links-one-contain"
+                      >Business & Fin</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-chevron-right"></i
+                    ><a href="#" class="footer-col-two-links-one-contain"
+                      >Productivity</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-col-two-links-one">
+                <div class="footer-col-two-links-one-heading">Quick links</div>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-chevron-right"></i
+                    ><a href="#" class="footer-col-two-links-one-contain"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-chevron-right"></i
+                    ><a href="#" class="footer-col-two-links-one-contain"
+                      >Careers</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-chevron-right"></i
+                    ><a href="#" class="footer-col-two-links-one-contain"
+                      >Our Team</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-chevron-right"></i
+                    ><a href="#" class="footer-col-two-links-one-contain"
+                      >Testimonials</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-chevron-right"></i
+                    ><a href="#" class="footer-col-two-links-one-contain"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-col-three">
+              <div class="footer-col-three-contain-one">
+                Our Newsletter
+                <span class="footer-col-three-contain-one-line"></span>
+              </div>
+              <div class="footer-contain-one">
+                Signup for our latest news & articles. We won’t give you spam
+                mails.
+              </div>
+              <form action="" class="footer-form">
+                <input
+                  type="text"
+                  placeholder="Email Address"
+                  class="footer-form-input"
+                />
+             <div class="footer-form-icon">
+              <i class="fa-solid fa-paper-plane"></i>
+             </div>
+              </form>
+              <div class="footer-contact">
+                <i class="fa-solid fa-phone"></i>
+                +91 9998969594
+
+              </div>
+              <div class="footer-email">
+                <i class="fa-solid fa-envelope"></i>
+                info@krishangtechnolab.com
+
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="footer-copyright">© Copyright 2024. All rights reserved.krishangtechnolab Designed by Zozothemes</div>
+      
+      </div>
+    </footer> 
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./asset/js/thame.js"></script>
+    <script>
+      var swiper = new Swiper(".client-section-mySwiper", {
+        
+
+        navigation: {
+          nextEl: ".arrow-right",
+          prevEl: ".arrow-left",
+        },
+        breakpoints: {
+  
+    0: {
+      slidesPerView: 3,
+      spaceBetween: 0
+    },
+
+    540: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+
+   768: {
+      slidesPerView: 5,
+      spaceBetween: 40
+    },
+   992: {
+      slidesPerView: 6,
+      spaceBetween: 40
+    },
+    1200: {
+      slidesPerView: 8,
+      spaceBetween: 0
+    }
+  }
+      });
+      var swiper = new Swiper(".coustmer-say-section-mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      });
+    </script>
+  </body>
+</html>
