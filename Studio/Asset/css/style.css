@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Plus Jakarta Sans;
+
+}
+
+.navitem-active{
+    position: absolute !important;
+    top: 0% !important; 
+    z-index: 1;
+
+
+ 
+}
+.fa-xmark{
+color: white;
+font-size: 25px;
+}
+
+.service-image{
+    filter: grayscale(1);
+    transition: .2s linear;
+}
+.service-image:hover{
+    filter: grayscale(0);
+}
+/* .menu-item{
+   position: absolute;
+   top: -75%;
+   width: 100%;
+    transition: 0.3s  !important;
+    
+
+} */
