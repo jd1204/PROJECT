@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Seguroplus" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <title>Seguroplus</title>
+    <link rel="icon" href="./images/seguroplus-logo.svg" />
+  </head>
+
+  <body>
+    <!-- header  -->
+
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="#"><img src="/images/seguroplus-logo.svg" alt="logo" title="logo" /></a>
+            <div class="nav-toggal-bar" onclick="navtoggle()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+          <div class="navmenu">
+            <ul>
+              <li><a href="./index.html">HOME</a></li>
+              <li><a href="./About-Us.html">ABOUT US</a></li>
+              <li><a href="">INSURENCE</a></li>
+              <li><a href="./blog-page.html">BLOG</a></li>
+              <li><a href="./contact-page.html">CONTACT</a></li>
+              <!-- <li class="search">
+                <input type="search" placeholder="SEARCH HERE...." /><img
+                  src="/images/search-icon.svg"
+                  alt=""
+                />
+              </li> -->
+              <li><input class="btn" type="button" value="GET A QUOTE" /></li>
+              <li>
+                <ul class="nav-flags">
+                  <li class="us-flag">
+                    <a href=""
+                      ><img
+                        src="./images/us-flag-1.png"
+                        style="width: 100%"
+                        alt="us-flag-1"
+                    /></a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </li>
+                  <li class="spain-flag">
+                    <a href="" title="us-flag-1" 
+                      ><img
+                        src="./images/spain-flag-1.png"
+                        alt="spain-flag-1"
+                        style="width: 100%"
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- banner section  -->
+
+    <section class="banner-section">
+      <div class="banner-content-img">
+        <div class="banner-content">
+          <h1>
+            Welcome to SeguroPlus - Your
+            <span class="sky-blue">Premier Insurance Agency!</span>
+          </h1>
+          <p>
+            At SeguroPlus, we understand that insurance is more than just a
+            policy - it's peace of mind. That's why we're dedicated to providing
+            you with reliable and value-driven insurance solutions that cater to
+            your specific needs.
+          </p>
+          <div class="banner-bottom">
+            <button class="btn">GET A QUOTE</button>
+          </div>
+        </div>
+        <div class="banner-img">
+          <img src="./images/home-main-img-1_new.png" alt="" style="width: 100%" loading="eager"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- three-blog-section -->
+
+    <div class="three-blog-section">
+      <div class="container">
+        <h2 class="white">Our Insurance Services</h2>
+        <div class="three-blogs">
+          <div class="blog">
+            <div class="blog-icon">
+              <img src="/images/home-insurance-icon.svg" alt="" loading="lazy" style="width: 100%;" />
+            </div>
+            <div class="blog-content">
+              <h3 class="sky-blue txt-center">Home Insurance</h3>
+              <p class="blog-text-color max-height">
+                Protect your most valuable asset with our comprehensive home
+                insurance policies. We offer coverage that gives you peace of
+                mind, knowing your home is protected against unforeseen events.
+              </p>
+              <p class="blog-text-color max-height">
+                Already have home insurance. Not a problem, we can help you get
+                quotes to find a better rate and help save you some money!
+              </p>
+              <a href="#">
+                <div class="blog-btn">
+                  <div class="btn-text">Read More</div>
+                  <div class="btn-arrow">
+                    <img src="/images/coolicon.svg" alt="" loading="lazy"  style="width: 100%;"/>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="blog">
+            <div class="blog-icon">
+              <img src="/images/auto-insurance.svg" alt="" loading="lazy"  style="width: 100%;"/>
+            </div>
+            <div class="blog-content">
+              <h3 class="sky-blue txt-center">Auto Insurance</h3>
+              <p class="blog-text-color max-height">
+                Stay safe on the road with our auto insurance policies. We
+                provide coverage for all types of vehicles, ensuring you're
+                protected no matter where your journey takes you.
+              </p>
+
+              <a href="#">
+                <div class="blog-btn">
+                  <div class="btn-text">Read More</div>
+                  <div class="btn-arrow">
+                    <img src="/images/coolicon.svg" alt="" loading="lazy"/>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="blog">
+            <div class="blog-icon">
+              <img src="/images/property-insurance.svg" alt="" loading="lazy" width="100%" />
+            </div>
+            <div class="blog-content">
+              <h3 class="sky-blue txt-center">Property-Casualty Insurance</h3>
+              <p class="blog-text-color max-height">
+                Keep your business safe with our property-casualty insurance. We
+                offer a range of coverage options to protect your business
+                assets and shield you from liability.
+              </p>
+              <p class="blog-text-color max-height">
+                We offer personalized solutions, tailored to your specific needs
+                and budget. And the best part? We provide quotes from up to 5
+                carriers at the same time, all in your language, to ensure you
+                get the best coverage at the best price.
+              </p>
+              <a href="">
+                <div class="blog-btn">
+                  <div class="btn-text">Read More</div>
+                  <div class="btn-arrow">
+                    <img src="/images/coolicon.svg" alt="" loading="lazy"/>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- insurance-carriers -->
+
+    <section class="insurance-carriers">
+      <div class="container">
+        <h2 class="sky-blue txt-center">Our Insurance Carriers</h2>
+        <div class="insurance-logos">
+          <div class="logo">
+            <img src="/images/Mercury-Logo 1.svg" alt="" loading="lazy" />
+          </div>
+          <div class="logo">
+            <img src="/images/clipart-allstate-logo.svg" alt="" loading="lazy" />
+          </div>
+          <div class="logo">
+            <img src="/images/the-hartford-hd-logo.svg" alt="" loading="lazy" />
+          </div>
+          <div class="logo">
+            <img src="/images/kisspng-kemper-logo.svg" alt="" loading="lazy" />
+          </div>
+          <div class="logo">
+            <img src="/images/progressivel-ogo.svg" alt="" loading="lazy" />
+          </div>
+          <div class="logo">
+            <img src="/images/opened-logo.svg" alt="" loading="lazy" />
+          </div>
+          <div class="logo">
+            <img src="/images/foremost-insurance-logo.svg" alt="" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonials-section -->
+
+    <section class="testimonials-section">
+      <div class="container">
+        <h2 class="white txt-center">Testimonials</h2>
+        
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="quotation-img">
+                  <img src="/images/double-quotes.svg" alt="" loading="lazy" />
+                </div>
+                <div class="card-description">
+                  On the other hand, we denounce with righteous indignation and
+                  dislike men who are so beguiled and demoralized by the charms
+                  of pleasure of the moment
+                </div>
+                <div class="author-detail">
+                  <div class="author-img">
+                    <img src="/images/author-img.svg" alt="" loading="lazy" />
+                  </div>
+                  <div class="auther-name-str">
+                    <div class="name">Hezekiah Beard</div>
+                    <div class="rateing">
+                      <img src="/images/star.svg" alt="" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="quotation-img">
+                  <img src="/images/double-quotes.svg" alt="" />
+                </div>
+                <div class="card-description">
+                  On the other hand, we denounce with righteous indignation and
+                  dislike men who are so beguiled and demoralized by the charms
+                  of pleasure of the moment
+                </div>
+                <div class="author-detail">
+                  <div class="author-img">
+                    <img src="/images/author-img-2.svg" alt="" />
+                  </div>
+                  <div class="auther-name-str">
+                    <div class="name">Cameron Rasmussen</div>
+                    <div class="rateing">
+                      <img src="/images/star-2.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="quotation-img">
+                  <img src="/images/double-quotes.svg" alt="" />
+                </div>
+                <div class="card-description">
+                  On the other hand, we denounce with righteous indignation and
+                  dislike men who are so beguiled and demoralized by the charms
+                  of pleasure of the moment
+                </div>
+                <div class="author-detail">
+                  <div class="author-img">
+                    <img src="/images/author-img-3.svg" alt="" />
+                  </div>
+                  <div class="auther-name-str">
+                    <div class="name">Roman Wilkins</div>
+                    <div class="rateing">
+                      <img src="/images/star-3.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="quotation-img">
+                  <img src="/images/double-quotes.svg" alt="" />
+                </div>
+                <div class="card-description">
+                  On the other hand, we denounce with righteous indignation and
+                  dislike men who are so beguiled and demoralized by the charms
+                  of pleasure of the moment
+                </div>
+                <div class="author-detail">
+                  <div class="author-img">
+                    <img src="/images/author-img.svg" alt="" />
+                  </div>
+                  <div class="auther-name-str">
+                    <div class="name">Hezekiah Beard</div>
+                    <div class="rateing">
+                      <img src="/images/star.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="quotation-img">
+                  <img src="/images/double-quotes.svg" alt="" />
+                </div>
+                <div class="card-description">
+                  On the other hand, we denounce with righteous indignation and
+                  dislike men who are so beguiled and demoralized by the charms
+                  of pleasure of the moment
+                </div>
+                <div class="author-detail">
+                  <div class="author-img">
+                    <img src="/images/author-img-2.svg" alt="" />
+                  </div>
+                  <div class="auther-name-str">
+                    <div class="name">Cameron Rasmussen</div>
+                    <div class="rateing">
+                      <img src="/images/star-2.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="quotation-img">
+                  <img src="/images/double-quotes.svg" alt="" />
+                </div>
+                <div class="card-description">
+                  On the other hand, we denounce with righteous indignation and
+                  dislike men who are so beguiled and demoralized by the charms
+                  of pleasure of the moment
+                </div>
+                <div class="author-detail">
+                  <div class="author-img">
+                    <img src="/images/author-img-3.svg" alt="" />
+                  </div>
+                  <div class="auther-name-str">
+                    <div class="name">Roman Wilkins</div>
+                    <div class="rateing">
+                      <img src="/images/star-3.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- zig zag section -->
+
+    <section class="zig-zag">
+      <div class="container">
+        <div class="zig-zag-row-one">
+          <div class="zig-zag-col-one">
+            <div class="zig-zag-col-one-image-conatin">
+              <img
+                src="./images/zig-zag-section-image-one.png"
+                alt="zig-zag-section-image-one" loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="zig-zag-col-two">
+            <div class="zig-zag-col-two-tax-conatin">
+              <h2 class="sky-blue">Our Customer’s Come First</h2>
+              <p class="zig-zag-col-two-tax-conatin-one">
+                At SeguroPlus, we prioritize exceptional customer service above
+                all else. Our dedicated team of professionals is always on
+                standby, ready to provide personalized assistance tailored to
+                your unique needs. We understand that every customer is
+                different, and we strive to offer solutions that are
+                specifically designed to meet your individual circumstances.
+              </p>
+              <p class="zig-zag-col-two-tax-conatin-one">
+                Our commitment to excellence in customer service means that
+                we're always here for you, whether you're selecting a policy,
+                filing a claim, or simply seeking advice.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="zig-zag-row-two">
+          <div class="zig-zag-col-three">
+            <div class="zig-zag-col-two-tax-conatin">
+              <h2 class="sky-blue">Speaking Your Language</h2>
+              <p class="zig-zag-col-two-tax-conatin-one">
+                We take pride in our ability to truly understand our customers.
+                We recognize the importance of clear communication in the realm
+                of insurance, which is why we're committed to speaking your
+                language.
+              </p>
+              <p class="zig-zag-col-two-tax-conatin-one">
+                Our bilingual team is here to ensure that you fully comprehend
+                your coverage options, enabling you to make informed decisions
+                about your insurance. With us, you're not just purchasing
+                insurance; you're gaining peace of mind in the language that
+                you're most comfortable with.
+              </p>
+
+              <div class="zig-zag-col-three-button">
+                <p class="zig-zag-col-three-button-conain-one">English</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                </label>
+                <p class="zig-zag-col-three-button-conain-two">española</p>
+              </div>
+            </div>
+          </div>
+          <div class="zig-zag-col-four">
+            <div class="zig-zag-col-one-image-conatin">
+              <img src="./images/zig-zag-section-image-two.png" alt="zig-zag-section-image-two" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cta section -->
+
+    <section class="cta-section">
+      <div class="container">
+        <h2 class="cta-sec-contain-one">
+          We're proud to serve our diverse community as the premier Hispanic
+          insurance agency. So why wait?
+          <span class="cta-sec-contain-one-span"
+            >Start your journey towards peace of mind today!</span
+          >
+        </h2>
+        <button class="btn">GET A QUOTE</button>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-col-one">
+            <div class="footer-logo">
+              <a href="#">
+                <img src="./images/footer-logo.svg" alt="footer-logo" title="footer-logo" />
+              </a>
+            </div>
+            <p class="footer-col-one-contain">
+              At SeguroPlus, we understand that insurance is more than just a
+              policy - it's peace of mind. That's why we're dedicated to
+              providing you with reliable and value-driven insurance solutions
+              that cater to your specific needs.
+            </p>
+          </div>
+          <div class="footer-col-two">
+            <div class="footer-links">
+              <div class="footer-contact">
+                <p class="footer-contact-Heading">
+                  CONTACT <span class="footer-contact-Heading-line"></span>
+                </p>
+                <ul>
+                  <li class="footer-contact-contain-one">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="#" >
+                      <p class="white" >123 Street, New York, USA</p></a
+                    >
+                  </li>
+
+                  <li class="footer-contact-contain-one">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href=""> <p class="white" >+012 345 67890</p></a>
+                  </li>
+                  <li class="footer-contact-contain-one">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href=""> <p class="white" >info@seguroplus.com</p></a>
+                  </li>
+                  <li class="footer-contact-icon">
+                    <div class="">
+                      <a href="#" title="instgram">
+                       <div class="footer-contact-icon-one">
+                        <i class="fa-brands fa-instagram"></i>
+                       </div>
+                      </a>
+                    </div>
+                    <div class="">
+                      <a href="#" title="facebook">
+                       <div class="footer-contact-icon-one">
+                        <i class="fa-brands fa-facebook"></i>
+                       </div>
+                      </a>
+                    </div>
+                    <div class="">
+                      <a href="#" title="twitter">
+                       <div class="footer-contact-icon-one">
+                        <i class="fa-brands fa-x-twitter"></i>
+                       </div>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer-contact">
+                <p class="footer-contact-Heading">
+                  COMPANY <span class="footer-contact-Heading-line"></span>
+                </p>
+                <ul>
+                  <li class="footer-contact-contain-one">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="./About-Us.html" class="white">About Us</a>
+                  </li>
+                  <li class="footer-contact-contain-one">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="./contact-page.html" class="white">Contact Us</a>
+                  </li>
+                  <li class="footer-contact-contain-one">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#" class="white">Privacy Policy</a>
+                  </li>
+                  <li class="footer-contact-contain-one">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#" class="white">Terms & Condition</a>
+                  </li>
+                  <li class="footer-contact-contain-one">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#" class="white">Support</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer-contact">
+                <p class="footer-contact-Heading">
+                  Services<span class="footer-contact-Heading-line"></span>
+                </p>
+                <ul>
+                  <li class="footer-contact-contain-one">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#" class="white">Home Insurance</a>
+                  </li>
+                  <li class="footer-contact-contain-one">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#" class="white">Auto Insurance</a>
+                  </li>
+                  <li class="footer-contact-contain-one">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#" class="white">Property-Casualty Insurance </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- copy-right-contain -->
+
+      <div class="copy-right">
+        <div class="copy-right-contain-line"></div>
+      </div>
+      <div class="container">
+        <div class="copy-right-contain">
+          <p class="copy-right-contain-one">
+            <a href="#" class="white">Seguroplus.All Copyrights Reserved.</a>
+          </p>
+          <p class="copy-right-contain-one">
+            <a href="#" class="white">Design By @Krishang Technolab</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="./thame.js"></script>
+    <script>
+      //  Initialize Swiper
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1100: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
