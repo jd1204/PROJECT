@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .zig-zag-row-one {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 100px;
+        }
+        .zig-zag-row-two {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 100px;
+        }
+        .zig-zag-col-four {
+            padding-left: 20px;
+        }
+        .zig-zag-col-one {
+            width: 49%;
+        }
+        .zig-zag-col-two {
+            width: 51%;
+        }
+        .zig-zag-col-two-tax-conatin-one {
+            font-size: 24px;
+            color: #161616;
+            font-weight: 500;
+            padding-top: 21px;
+        }
+        .zig-zag-col-three-button {
+            background-color: #2A3A8F;
+            display: flex;
+            align-items: center;
+            width: 232px;
+            height: 66px;
+            padding: 0px 10px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+        .zig-zag-col-three-button-conain-one {
+            font-size: 14px;
+            color: #fff;
+            font-weight: 500;
+            line-height: 21px;
+            padding-right: 14px;
+            text-transform: uppercase;
+        }
+        .zig-zag-col-three-button-conain-two {
+            font-size: 14px;
+            color: #b3b3b3;
+            font-weight: 500;
+            line-height: 21px;
+            padding-left: 14px;
+            text-transform: uppercase;
+        }
+        .switch {
+            --secondary-container: #3a4b39;
+            --primary: #84da89;
+            font-size: 17px;
+            position: relative;
+            display: inline-block;
+            width: 3.7em;
+            height: 1.8em;
+        }
+        .switch input {
+            display: none;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ffffff;
+            transition: .2s;
+            border-radius: 30px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 1.4em;
+            width: 1.4em;
+            border-radius: 20px;
+            left: 0.2em;
+            bottom: 0.2em;
+            background-color: #2A3A8F;
+            transition: .4s;
+        }
+        input:focus + .slider {
+            box-shadow: 0 0 1px var(--secondary-container);
+        }
+        input:checked + .slider:before {
+            transform: translateX(1.5em);
+        }
+    </style>
+</head>
+<body>
+    <section class="zig-zag">
+        <div class="container">
+            <div class="zig-zag-row-one">
+                <div class="zig-zag-col-one">
+                    <div class="zig-zag-col-one-image-conatin">
+                        <img src="./images/zig-zag-section-image-one.png" alt="zig-zag-section-image-one" />
+                    </div>
+                </div>
+                <div class="zig-zag-col-two">
+                    <div class="zig-zag-col-two-tax-conatin">
+                        <h2 class="sky-blue" id="heading1">Our Customer’s Come First</h2>
+                        <p class="zig-zag-col-two-tax-conatin-one" id="para1">
+                            At SeguroPlus, we prioritize exceptional customer service above all else. Our dedicated team of professionals is always on standby, ready to provide personalized assistance tailored to your unique needs. We understand that every customer is different, and we strive to offer solutions that are specifically designed to meet your individual circumstances.
+                        </p>
+                        <p class="zig-zag-col-two-tax-conatin-one" id="para2">
+                            Our commitment to excellence in customer service means that we're always here for you, whether you're selecting a policy, filing a claim, or simply seeking advice.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="zig-zag-row-two">
+                <div class="zig-zag-col-three">
+                    <div class="zig-zag-col-two-tax-conatin">
+                        <h2 class="sky-blue" id="heading2">Speaking Your Language</h2>
+                        <p class="zig-zag-col-two-tax-conatin-one" id="para3">
+                            We take pride in our ability to truly understand our customers. We recognize the importance of clear communication in the realm of insurance, which is why we're committed to speaking your language.
+                        </p>
+                        <p class="zig-zag-col-two-tax-conatin-one" id="para4">
+                            Our bilingual team is here to ensure that you fully comprehend your coverage options, enabling you to make informed decisions about your insurance. With us, you're not just purchasing insurance; you're gaining peace of mind in the language that you're most comfortable with.
+                        </p>
+                        <div class="zig-zag-col-three-button">
+                            <p class="zig-zag-col-three-button-conain-one" id="btnEnglish">English</p>
+                            <label class="switch">
+                                <input type="checkbox" id="langSwitch">
+                                <span class="slider"></span>
+                            </label>
+                            <p class="zig-zag-col-three-button-conain-two" id="btnSpanish">Española</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zig-zag-col-four">
+                    <div class="zig-zag-col-one-image-conatin">
+                        <img src="./images/zig-zag-section-image-two.png" alt="zig-zag-section-image-two" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- JavaScript for language toggle -->
+    <script>
+        $(document).ready(function() {
+            // English text
+            var textsEnglish = {
+                heading1: "Our Customer’s Come First",
+                para1: "At SeguroPlus, we prioritize exceptional customer service above all else. Our dedicated team of professionals is always on standby, ready to provide personalized assistance tailored to your unique needs. We understand that every customer is different, and we strive to offer solutions that are specifically designed to meet your individual circumstances.",
+                para2: "Our commitment to excellence in customer service means that we're always here for you, whether you're selecting a policy, filing a claim, or simply seeking advice.",
+                heading2: "Speaking Your Language",
+                para3: "We take pride in our ability to truly understand our customers. We recognize the importance of clear communication in the realm of insurance, which is why we're committed to speaking your language.",
+                para4: "Our bilingual team is here to ensure that you fully comprehend your coverage options, enabling you to make informed decisions about your insurance. With us, you're not just purchasing insurance; you're gaining peace of mind in the language that you're most comfortable with.",
+                btnEnglish: "English",
+                btnSpanish: "Española"
+            };
+
+            // Spanish text
+            var textsSpanish = {
+                heading1: "Nuestros Clientes Son lo Primero",
+                para1: "En SeguroPlus, priorizamos el servicio al cliente excepcional por encima de todo. Nuestro equipo de profesionales dedicados siempre está disponible, listo para brindar asistencia personalizada adaptada a sus necesidades únicas. Entendemos que cada cliente es diferente y nos esforzamos por ofrecer soluciones diseñadas específicamente para satisfacer sus circunstancias individuales.",
+                para2: "Nuestro compromiso con la excelencia en el servicio al cliente significa que siempre estamos aquí para usted, ya sea que esté seleccionando una póliza, presentando una reclamación o simplemente buscando asesoramiento.",
+                heading2: "Hablando Tu Idioma",
+                para3: "Nos enorgullece nuestra capacidad para entender verdaderamente a nuestros clientes. Reconocemos la importancia de una comunicación clara en el ámbito del seguro, por eso estamos comprometidos a hablar tu idioma.",
+                para4: "Nuestro equipo bilingüe está aquí para asegurarse de que comprenda completamente sus opciones de cobertura, permitiéndole tomar decisiones informadas sobre su seguro. Con nosotros, no solo está comprando un seguro; está obteniendo tranquilidad en el idioma con el que se sienta más cómodo.",
+                btnEnglish: "Inglés",
+                btnSpanish: "Spanish"
+            };
+
+            // Update text to English
+            function updateTextToEnglish() {
+                $('#heading1').text(textsEnglish.heading1);
+                $('#para1').text(textsEnglish.para1);
+                $('#para2').text(textsEnglish.para2);
+                $('#heading2').text(textsEnglish.heading2);
+                $('#para3').text(textsEnglish.para3);
+                $('#para4').text(textsEnglish.para4);
+                $('#btnEnglish').text(textsEnglish.btnEnglish);
+                $('#btnSpanish').text(textsEnglish.btnSpanish);
+            }
+
+            // Update text to Spanish
+            function updateTextToSpanish() {
+                $('#heading1').text(textsSpanish.heading1);
+                $('#para1').text(textsSpanish.para1);
+                $('#para2').text(textsSpanish.para2);
+                $('#heading2').text(textsSpanish.heading2);
+                $('#para3').text(textsSpanish.para3);
+                $('#para4').text(textsSpanish.para4);
+                $('#btnEnglish').text(textsSpanish.btnEnglish);
+                $('#btnSpanish').text(textsSpanish.btnSpanish);
+            }
+
+            // Initialize with English text
+            updateTextToEnglish();
+
+            // Toggle language on switch change
+            $('#langSwitch').on('change', function() {
+                if ($(this).is(':checked')) {
+                    updateTextToSpanish();
+                } else {
+                    updateTextToEnglish();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
